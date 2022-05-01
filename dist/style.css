@@ -1,23 +1,28 @@
+/* line 1, ../Mon Site/Html-CSS/src/style.scss */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* line 8, ../Mon Site/Html-CSS/src/style.scss */
 body {
   background-color: #666;
 }
 
+/* line 12, ../Mon Site/Html-CSS/src/style.scss */
 header {
   background-color: black;
 }
 
+/* line 15, ../Mon Site/Html-CSS/src/style.scss */
 header div {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
+/* line 20, ../Mon Site/Html-CSS/src/style.scss */
 header div a {
   text-shadow: 2px 0 0 #555, -2px 0 0 #555, 0 2px 0 #555, 0 -2px 0 #555, 1px 1px #555, -1px -1px 0 #555, 1px -1px 0 #555, -1px 1px 0 #555;
   color: #FFD700;
@@ -27,26 +32,32 @@ header div a {
   margin-right: 5%;
 }
 
+/* line 34, ../Mon Site/Html-CSS/src/style.scss */
 section.accueil article {
   border: 1px solid white;
   margin: 5px;
   background-color: #999;
 }
 
+/* line 40, ../Mon Site/Html-CSS/src/style.scss */
 section.accueil article .card {
   border: 1px solid white;
   margin: 5px;
 }
 
+/* line 44, ../Mon Site/Html-CSS/src/style.scss */
 section.accueil article .card a {
-  text-decoration: none;
+  text-decoration: none !important;
+  color: black;
 }
 
+/* line 49, ../Mon Site/Html-CSS/src/style.scss */
 section.accueil article .card .image {
   display: block;
   width: 100%;
 }
 
+/* line 57, ../Mon Site/Html-CSS/src/style.scss */
 section.accueil article .card .container .description, section.accueil article .card .container .titre {
   padding: 5px;
   border: 1px solid white;
@@ -57,36 +68,43 @@ section.accueil article .card .container .description, section.accueil article .
   justify-content: space-around;
 }
 
+/* line 68, ../Mon Site/Html-CSS/src/style.scss */
 section.accueil article .card .container .description {
   height: 70px;
   background-color: #b5ceff;
 }
 
+/* line 72, ../Mon Site/Html-CSS/src/style.scss */
 section.accueil article .card .container .description q {
   font-style: italic;
 }
 
+/* line 76, ../Mon Site/Html-CSS/src/style.scss */
 section.accueil article .card .container .description p {
   align-self: end;
   font-weight: bold;
   font-size: 0.85em;
 }
 
+/* line 83, ../Mon Site/Html-CSS/src/style.scss */
 section.accueil article .card .container .titre {
   background-color: #75bff7;
 }
 
+/* line 92, ../Mon Site/Html-CSS/src/style.scss */
 section.article article {
   border: 1px solid white;
   margin: 5px;
   background-color: #999;
 }
 
+/* line 97, ../Mon Site/Html-CSS/src/style.scss */
 section.article article .image {
   width: 100%;
   display: block;
 }
 
+/* line 102, ../Mon Site/Html-CSS/src/style.scss */
 section.article article .titre {
   padding: 5px;
   margin: 5px;
@@ -94,6 +112,7 @@ section.article article .titre {
   background-color: #75bff7;
 }
 
+/* line 109, ../Mon Site/Html-CSS/src/style.scss */
 section.article article #contenu {
   padding: 5px;
   margin: 5px;
@@ -101,22 +120,26 @@ section.article article #contenu {
   background-color: #b5ceff;
 }
 
+/* line 114, ../Mon Site/Html-CSS/src/style.scss */
 section.article article #contenu p {
   text-align: justify;
   text-indent: 3%;
 }
 
+/* line 121, ../Mon Site/Html-CSS/src/style.scss */
 aside {
   border: 1px solid white;
   margin: 5px;
   background-color: #999;
 }
 
+/* line 126, ../Mon Site/Html-CSS/src/style.scss */
 aside .image {
   width: 100%;
   display: block;
 }
 
+/* line 131, ../Mon Site/Html-CSS/src/style.scss */
 aside ul {
   list-style: inside;
   list-style-type: "\27B5";
@@ -126,6 +149,7 @@ aside ul {
   background-color: #b5ceff;
 }
 
+/* line 139, ../Mon Site/Html-CSS/src/style.scss */
 aside ul ul {
   border: none;
   list-style: inside;
@@ -133,55 +157,62 @@ aside ul ul {
 }
 
 @media all and (min-width: 768px) {
+  /* line 151, ../Mon Site/Html-CSS/src/style.scss */
   section.accueil article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  /* line 156, ../Mon Site/Html-CSS/src/style.scss */
   section.accueil aside, section.article aside {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
   }
+  /* line 161, ../Mon Site/Html-CSS/src/style.scss */
   section.accueil aside .image, section.article aside .image {
     height: 100%;
   }
 }
 
 @media all and (min-width: 1024px) {
-  /*  body {
-        background-image: url("fond.jpg"); 
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position: 50% 50%;
-    }*/
+  /* line 173, ../Mon Site/Html-CSS/src/style.scss */
   section.accueil {
     display: grid;
     grid-template-columns: 3fr 1fr;
   }
+  /* line 177, ../Mon Site/Html-CSS/src/style.scss */
   section.accueil article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  /* line 182, ../Mon Site/Html-CSS/src/style.scss */
   section.accueil aside {
     display: flex;
     flex-direction: column;
   }
+  /* line 186, ../Mon Site/Html-CSS/src/style.scss */
   section.accueil aside .image {
     height: auto;
   }
+  /* line 194, ../Mon Site/Html-CSS/src/style.scss */
   section.article {
     display: flex;
     flex-direction: row-reverse;
   }
+  /* line 198, ../Mon Site/Html-CSS/src/style.scss */
   section.article article {
     width: 75%;
   }
+  /* line 202, ../Mon Site/Html-CSS/src/style.scss */
   section.article aside {
     width: 25%;
     display: flex;
     flex-direction: column;
   }
+  /* line 207, ../Mon Site/Html-CSS/src/style.scss */
   section.article aside .image {
     height: auto;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
